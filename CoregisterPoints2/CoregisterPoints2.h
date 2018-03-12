@@ -13,3 +13,4 @@ struct SPoint {
 
 //Prototypes
 void ReplaceStringInPlace(std::string& subject, const std::string& search, const std::string& replace);
+std::vector<std::string> split(const std::string &text, char sep);
