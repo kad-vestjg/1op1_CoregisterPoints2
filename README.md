@@ -9,7 +9,7 @@ Find corresepondings points within a certain range, using RTree (Boost)
  
 --
  ## USAGE
- Coregisterpoints2 <FileName.txt> [Distance (m)]
+ **Coregisterpoints2 <FileName.txt> [Distance (m)]**
  
  Option | Necessity | explanation
  ---|---|---
@@ -22,13 +22,9 @@ Find corresepondings points within a certain range, using RTree (Boost)
 ### Dataformat of input file: (:: ClassicReadingRoutine = true)
  
 ` 1        10        20        30        40        50        60        70        80`
- 
 ` +--------+---------+---------+---------+---------+---------+---------+---------+------->`
-
 `       1417               10861       1779.559       2145.712          0.000    Comment`
-
 `       1418               10862       1782.001       2146.667          0.000    Path`
-
 `        ...                 ...            ...            ...            ...    .......`
 
  (Fortran format: '(I10,A20,3F15.3,A)' )
@@ -42,15 +38,15 @@ Find corresepondings points within a certain range, using RTree (Boost)
  1418 1782.001 2146.667 0.000
  .... ........ ........ .....
  
-*OR*
 
 #### 5 arguments
  Id Point X Y Z
  0 1417 1779.559 2145.712 0.000
  1 1418 1782.001 2146.667 0.000
  . .... ........ ........ .....
- ------------- OR -------------
- == >5 arguments ==
+
+
+### >5 arguments
  Id Point X Y Z Extra Unused Data
  0 1417 1779.559 2145.712 0.000 path comment bs ....
  1 1418 1782.001 2146.667 0.000 only_path ....
@@ -59,15 +55,14 @@ Find corresepondings points within a certain range, using RTree (Boost)
  
 --
 
- External references/libraries:
- -- Boost (geometry/predicates/rtree)
+## External references/libraries:
+**Boost (geometry/predicates/rtree)**
  
 --
+## Revision history
 
- Author:  G.M.B. Vestjens
- Version  Author            Date          Changes
- -------  ------            ----          -------
- 
- 1.0      G.M.B. Vestjens   17-11-2017    Finished version using a default distance of 10cm
- 1.1      G.M.B. Vestjens   09-03-2018    Added a distance/range option for the commandline
+| Version | Author |           Date |         Changes |
+| ------- | ------ |           ---- |         ------- |
+| 1.0     | G.M.B. Vestjens  | 17-11-2017   | Finished version using a default distance of 10cm |
+| 1.1     | G.M.B. Vestjens  | 09-03-2018   | Added a distance/range option for the commandline |
 
